@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şirkət Vakansiyaları</title>
+    <link rel="stylesheet" href="desingn.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Balxurma</h1>
+        <p>Vakansiyaları yoxlayın və müraciət edin!</p>
+    </header>
+
+    <section class="vacancies-section">
+        <h2>Açıq Vakansiyalar</h2>
+        <div class="vacancies-list">
+            <div class="vacancy">
+                <h3>Proqramçı</h3>
+                <p>Back-end inkişafı üçün təcrübəli proqramçı axtarılır.</p>
+                <button class="apply-btn" onclick="openForm()">Müraciət et</button>
+            </div>
+            <div class="vacancy">
+                <h3>Mühasib</h3>
+                <p>Əmək haqqı və mühasibatlıq əməliyyatlarını idarə edəcək mütəxəssis axtarılır.</p>
+                <button class="apply-btn" onclick="openForm()">Müraciət et</button>
+            </div>
+            <div class="vacancy">
+                <h3>Satış Meneceri</h3>
+                <p>Satış şöbəsində müştəri xidmətlərini idarə edəcək satış meneceri axtarılır.</p>
+                <button class="apply-btn" onclick="openForm()">Müraciət et</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Müraciət Formu -->
+    <section id="apply-form" class="form-section">
+        <h2>Müraciət Formu</h2>
+        <form action="#" method="post" class="registration-form">
+            <div class="input-group">
+                <label for="fullname">Ad və Soyad</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Ad və Soyadınızı daxil edin" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Ünvanı</label>
+                <input type="email" id="email" name="email" placeholder="Email ünvanınızı daxil edin" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Telefon Nömrəsi</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefon nömrənizi daxil edin" required>
+            </div>
+
+            <div class="input-group">
+                <label for="position">Vakansiya Mövqeyi</label>
+                <select id="position" name="position" required>
+                    <option value="" disabled selected>Vakansiyanı seçin</option>
+                    <option value="programci">Proqramçı</option>
+                    <option value="muhasib">Mühasib</option>
+                    <option value="satış">Satış Meneceri</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="cv">CV (PDF formatında)</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" required>
+            </div>
+
+            <button type="submit">Müraciət et</button>
+        </form>
+    </section>
+
+    <script>
+        function openForm() {
+            document.getElementById("apply-form").scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

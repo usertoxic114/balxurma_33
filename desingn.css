@@ -1,0 +1,159 @@
+/* Ümumi stil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/* Vakansiyalar bölməsi */
+.vacancies-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.vacancies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vacancy {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vacancy p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.apply-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #45a049;
+}
+
+/* Form bölməsi */
+.form-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+input[type="file"] {
+    padding: 0;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Media sorğular (mobil cihazlar üçün optimizasiya) */
+@media (max-width: 600px) {
+    .vacancies-list {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .vacancy h3 {
+        font-size: 20px;
+    }
+
+    .form-section h2 {
+        font-size: 24px;
+    }
+}
